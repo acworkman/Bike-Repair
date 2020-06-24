@@ -1,0 +1,65 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(#FC5E55, #FA4083);
+}
+
+/* Making the container width and autoing the content */
+.container {
+    width: 1024px;
+    min-height: 300px; /* 300px and gets bigger if content needs */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main {
+    min-height: 300px;
+    display: flex;
+    align-items: center; /* FBox property that centers the child elements vertically */
+}
+
+.cards {
+    min-height: 300px;
+    display: flex; /* FBox property that makes the child elements inline */
+    justify-content: space-between; /* FBox property that adds even space between the child elements */
+}
+
+.card1 {
+    background-color: rgb(247, 165, 242);
+    min-height: 300px;
+    width: 30%;
+}
+
+.card2 {
+    background-color: rgb(245, 97, 237);
+    min-height: 300px;
+    width: 30%;
+}
+
+.card3 {
+    background-color: rgb(252, 52, 242);
+    min-height: 300px;
+    width: 30%;
+}
+
+.herobox1 {
+    flex: 2;
+}
+
+.herobox2 {
+    flex: 1;
+}
+
+.nav-box li {
+    display: inline;
+}
