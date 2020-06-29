@@ -1,9 +1,11 @@
 html {
-    height: 100%;
+    height: 100%; /* Makes the html site full height */
 }
 
 body {
-    background-image: linear-gradient(#FC5E55, #FA4083);
+    background-image: linear-gradient(#FC5E55, #FA4083); /* Adds a gradient background */
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 /* Making the container width and autoing the content */
@@ -15,51 +17,107 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;  /* FBox property that makes the child elements inline */
+    justify-content: space-between; /* FBox property that adds even space between the child elements */
+    align-items: center;    /* FBox property that centers the child elements vertically */
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 main {
     min-height: 300px;
-    display: flex;
+    display: flex;  /* FBox property that makes the child elements inline */
     align-items: center; /* FBox property that centers the child elements vertically */
 }
 
 .cards {
-    min-height: 300px;
     display: flex; /* FBox property that makes the child elements inline */
     justify-content: space-between; /* FBox property that adds even space between the child elements */
+    text-align: center;
 }
 
+.cards a {
+    color: white;
+    text-decoration: none;
+}
+
+.cards i {
+    font-size: 80px;
+    padding-top: 30px;
+}
+
+.cards h2 {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.cards p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
 .card1 {
-    background-color: rgb(247, 165, 242);
-    min-height: 300px;
+    min-height: 250px;
     width: 30%;
+    background-image: url(/images/image-background-card1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.192); /* Shadow for the box around this div */
 }
 
 .card2 {
-    background-color: rgb(245, 97, 237);
-    min-height: 300px;
+    min-height: 250px;
     width: 30%;
+    background-image: url(/images/image-background-card2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.192);
 }
 
 .card3 {
-    background-color: rgb(252, 52, 242);
-    min-height: 300px;
+    min-height: 250px;
     width: 30%;
+    background-image: url(/images/image-background-card3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.192);
 }
 
 .herobox1 {
-    flex: 2;
+    flex: 2;    /* Since is 2 and the other child is 1 this is doulbe the size of the other child */
+    padding-right: 100px;
 }
 
+.herobox1 p {
+    line-height: 30px;
+}
+
+.herobox1 h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.192);  /* Shadow around the text with a low opacity */
+} 
+
 .herobox2 {
-    flex: 1;
+    flex: 1; /* Since this is 1 and the other child is 2 this is half the size of the other child */
 }
 
 .nav-box li {
-    display: inline;
+    display: inline; /* Makes the nav bar list inline */
 }
+
+.my-button {
+    color: #FA4083;
+    background-color: white;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    padding: 11px 25px 11px 25px;
+    display: inline-block;
+    margin-top: 30px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.192);
+}
+
