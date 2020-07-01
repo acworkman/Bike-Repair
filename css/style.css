@@ -1,8 +1,12 @@
 html {
     min-height: 100%;
-}
-body {
     background-image: linear-gradient(#FC5E55, #FA4083); /* Adds a gradient background */
+}
+
+body {
+    background-image: url(/images/image-lion-background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
     color: white;
 }
@@ -28,6 +32,17 @@ main {
     min-height: 300px;
     display: flex;  /* FBox property that makes the child elements inline */
     align-items: center; /* FBox property that centers the child elements vertically */
+}
+
+
+.main2 {
+    min-height: 300px;
+    padding-top: 50px;
+}
+
+.main2 h1 {
+    font-size: 50px;
+    padding-bottom: 20px;
 }
 
 .cards {
@@ -106,9 +121,9 @@ main {
     flex: 1; /* Since this is 1 and the other child is 2 this is half the size of the other child */
 }
 
-.nav-box li {
-    display: inline; /* Makes the nav bar list inline */
-}
+/* .nav-box li {
+    display: inline; 
+} */
 
 .my-button {
     color: #FA4083;
@@ -122,13 +137,46 @@ main {
     border-radius: 2px;
 }
 
+/* Styles for hovering over the button */
+.my-button:hover {
+    background-color: aqua; /* Changes background color while hovering button */
+    transition-duration: 1s;    /* Takes 1s for the hover effect to take action */
+}
+
 .nav-buttons {
     color: white;
     font-family: 'Playfair Display', serif;
-    text-decoration: none;
     padding: 11px 25px 11px 25px;
     display: inline-block;
     border: 1px solid white;
+    position: relative;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color: white;
+}
+
+.drop-down-box {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.nav-buttons:hover .drop-down-box {
+    display: block;
+}
+
+.drop-down-box .nav-buttons {
+    width: 80px;
+     background-color: white;
+     margin-top: 10px;
+}
+
+.drop-down-box .nav-buttons a {
+    color: #FA4083;
 }
 
 .testimonials {
@@ -144,6 +192,20 @@ main {
     border: 1px solid white;
     box-sizing: border-box; /* Keeps the box truly 47% while adding padding inside the box */
     margin-top: 50px;
+    line-height: 25px;
 }
 
+/* Activates these properties on the last p tag in the tbox classes */
+.tbox p:last-of-type { 
+    font-size: 12px;
+    padding-left: 30px;
+}
 
+.input-name {
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.input-submit {
+    padding-top: 20px;
+}
