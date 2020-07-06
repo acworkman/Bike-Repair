@@ -206,6 +206,38 @@ main {
     padding-top: 20px;
 }
 
+.input-name label {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.input-email label {
+    display: block;
+    padding-bottom: 10px;
+}
+
 .input-submit {
     padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+.input-text {
+    padding-top: 20px;
+}
+
+.input-checkbox {
+    padding-top: 20px;
+}
+
+.input-radio {
+    padding-top: 20px;
+}
+
+.input-radio p {
+    padding-bottom: 5px;
+}
+
+.input-country {
+    padding-top: 20px;
+}
+
